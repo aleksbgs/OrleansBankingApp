@@ -1049,6 +1049,22 @@
           }
         }
       },
+      "Microsoft.Orleans.Transactions/8.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Orleans.Runtime": "8.2.0"
+        },
+        "compile": {
+          "lib/net8.0/Orleans.Transactions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Orleans.Transactions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Win32.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1828,7 +1844,8 @@
           "Microsoft.Orleans.Core.Abstractions": "8.2.0",
           "Microsoft.Orleans.Reminders": "8.2.0",
           "Microsoft.Orleans.Runtime": "8.2.0",
-          "Microsoft.Orleans.Sdk": "8.2.0"
+          "Microsoft.Orleans.Sdk": "8.2.0",
+          "Microsoft.Orleans.Transactions": "8.2.0"
         },
         "compile": {
           "bin/placeholder/Orleans.Grains.dll": {}
@@ -3673,6 +3690,20 @@
         "logo_128.png",
         "microsoft.orleans.serialization.abstractions.8.2.0.nupkg.sha512",
         "microsoft.orleans.serialization.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Orleans.Transactions/8.2.0": {
+      "sha512": "0bWDJ2PU6NpqxpwnV1xl1SrEH1pssxlfC8Rd2szfRWlpDmCkNn2lYgx1DF5eGBz2NoVrmL4/wGyDpieXuPAlyw==",
+      "type": "package",
+      "path": "microsoft.orleans.transactions/8.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net8.0/Orleans.Transactions.dll",
+        "lib/net8.0/Orleans.Transactions.xml",
+        "logo_128.png",
+        "microsoft.orleans.transactions.8.2.0.nupkg.sha512",
+        "microsoft.orleans.transactions.nuspec"
       ]
     },
     "Microsoft.Win32.Primitives/4.3.0": {
@@ -5816,6 +5847,7 @@
     "net8.0": [
       "Microsoft.Orleans.Client >= 8.2.0",
       "Microsoft.Orleans.Clustering.AzureStorage >= 8.2.0",
+      "Microsoft.Orleans.Transactions >= 8.2.0",
       "Orleans.Grains >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
@@ -5872,6 +5904,10 @@
             "version": "[8.2.0, )"
           },
           "Microsoft.Orleans.Clustering.AzureStorage": {
+            "target": "Package",
+            "version": "[8.2.0, )"
+          },
+          "Microsoft.Orleans.Transactions": {
             "target": "Package",
             "version": "[8.2.0, )"
           },

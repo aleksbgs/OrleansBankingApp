@@ -9,6 +9,7 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.Orleans.Client" Version="8.2.0" />
         <PackageReference Include="Microsoft.Orleans.Clustering.AzureStorage" Version="8.2.0" />
+        <PackageReference Include="Microsoft.Orleans.Transactions" Version="8.2.0" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2"/>
     </ItemGroup>
 

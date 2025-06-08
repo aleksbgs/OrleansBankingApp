@@ -1,31 +1,44 @@
+using Orleans.Concurrency;
 using Orleans.Grains.Abstractions;
 using Orleans.Grains.State;
+using Orleans.Transactions.Abstractions;
 
 namespace Orleans.Grains.Grains;
 
+[Reentrant]
 public class AtmGrain : Grain, IAtmGrain
 {
-    private readonly IPersistentState<AtmState> _atm;
+    private readonly ITransactionalState<AtmState> _atmTransactionalState;
 
-    public AtmGrain([PersistentState("atm", "tableStorage")] IPersistentState<AtmState> atm)
+
+    public AtmGrain([TransactionalState("atm")] ITransactionalState<AtmState> atmTransactionalState)
     {
-        _atm = atm;
+        _atmTransactionalState = atmTransactionalState;
     }
 
     public async Task Initialize(decimal openingBalance)
     {
-        _atm.State.Balance = openingBalance;
-        _atm.State.Id = this.GetGrainId().GetGuidKey();
+        await _atmTransactionalState.PerformUpdate(state =>
+        {
+            state.Balance = openingBalance;
+            state.Id = this.GetGrainId().GetGuidKey();
+        });
+
     }
 
     public async Task Withdraw(Guid checkingAccountId, decimal amount)
     {
-        var checkingAccountGrain = this.GrainFactory.GetGrain<ICheckingAccountGrain>(checkingAccountId);
-        await checkingAccountGrain.Debit(amount);
+        _atmTransactionalState.PerformUpdate(state =>
+        {
+            var currentBalance = state.Balance;
+            var updatedBalance = currentBalance - amount;
+            state.Balance = updatedBalance;
 
-        var currentAtmBalance = _atm.State.Balance;
-        var updatedAtmBalance = currentAtmBalance - amount;
-        _atm.State.Balance = updatedAtmBalance;
-        await _atm.WriteStateAsync();
+        });
+    }
+
+    public async Task<decimal> GetBalance()
+    {
+        return await _atmTransactionalState.PerformRead((state) => state.Balance);
     }
 }

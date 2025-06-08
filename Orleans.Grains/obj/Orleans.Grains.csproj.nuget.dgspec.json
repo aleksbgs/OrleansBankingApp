@@ -59,6 +59,10 @@
             "Microsoft.Orleans.Sdk": {
               "target": "Package",
               "version": "[8.2.0, )"
+            },
+            "Microsoft.Orleans.Transactions": {
+              "target": "Package",
+              "version": "[8.2.0, )"
             }
           },
           "imports": [

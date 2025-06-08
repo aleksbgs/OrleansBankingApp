@@ -59,6 +59,10 @@
             "Microsoft.Orleans.Sdk": {
               "target": "Package",
               "version": "[8.2.0, )"
+            },
+            "Microsoft.Orleans.Transactions": {
+              "target": "Package",
+              "version": "[8.2.0, )"
             }
           },
           "imports": [
@@ -142,6 +146,10 @@
               "version": "[8.2.0, )"
             },
             "Microsoft.Orleans.Server": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "Microsoft.Orleans.Transactions.AzureStorage": {
               "target": "Package",
               "version": "[8.2.0, )"
             }

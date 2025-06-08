@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.Orleans.Client": "8.2.0",
           "Microsoft.Orleans.Clustering.AzureStorage": "8.2.0",
+          "Microsoft.Orleans.Transactions": "8.2.0",
           "Orleans.Grains": "1.0.0",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
@@ -520,6 +521,17 @@
           }
         }
       },
+      "Microsoft.Orleans.Transactions/8.2.0": {
+        "dependencies": {
+          "Microsoft.Orleans.Runtime": "8.2.0"
+        },
+        "runtime": {
+          "lib/net8.0/Orleans.Transactions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
       "Microsoft.Win32.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -863,7 +875,8 @@
           "Microsoft.Orleans.Core.Abstractions": "8.2.0",
           "Microsoft.Orleans.Reminders": "8.2.0",
           "Microsoft.Orleans.Runtime": "8.2.0",
-          "Microsoft.Orleans.Sdk": "8.2.0"
+          "Microsoft.Orleans.Sdk": "8.2.0",
+          "Microsoft.Orleans.Transactions": "8.2.0"
         },
         "runtime": {
           "Orleans.Grains.dll": {
@@ -1250,6 +1263,13 @@
       "sha512": "sha512-gdsywYbwORWmc+JN2B7qVqjQrzWSnHCdrYsfyBGbS1gfX1hs+rOmGbQwFJ+GmxAbj60xnrxXlXfCoDCDajcGYg==",
       "path": "microsoft.orleans.serialization.abstractions/8.2.0",
       "hashPath": "microsoft.orleans.serialization.abstractions.8.2.0.nupkg.sha512"
+    },
+    "Microsoft.Orleans.Transactions/8.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0bWDJ2PU6NpqxpwnV1xl1SrEH1pssxlfC8Rd2szfRWlpDmCkNn2lYgx1DF5eGBz2NoVrmL4/wGyDpieXuPAlyw==",
+      "path": "microsoft.orleans.transactions/8.2.0",
+      "hashPath": "microsoft.orleans.transactions.8.2.0.nupkg.sha512"
     },
     "Microsoft.Win32.Primitives/4.3.0": {
       "type": "package",

@@ -84,3 +84,4 @@
 /Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Client/obj/Debug/net8.0/ref/Orleans.Client.dll
 /Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Client/obj/Debug/net8.0/Orleans.Client.sourcelink.json
 /Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Client/bin/Debug/net8.0/Orleans.Reminders.dll
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Client/bin/Debug/net8.0/Orleans.Transactions.dll

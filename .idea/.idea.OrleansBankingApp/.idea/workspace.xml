@@ -12,10 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa135e8c-bd37-4cde-97d3-101752858c61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Orleans.Client/Contracts/CreateRecurringPayment.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Orleans.Grains/State/ReccuringPayment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OrleansBankingApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OrleansBankingApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/Orleans.Client.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/Orleans.Client.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.dll" afterDir="false" />
@@ -35,12 +33,13 @@
       <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Orleans.Client.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Orleans.Client.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/Abstractions/IAtmGrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/Abstractions/IAtmGrain.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/Abstractions/ICheckingAccountGrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/Abstractions/ICheckingAccountGrain.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/Grains/AtmGrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/Grains/AtmGrain.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/Orleans.Grains.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/Orleans.Grains.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Orleans.Grains/State/CheckingAccountState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/State/CheckingAccountState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.pdb" afterDir="false" />
@@ -80,7 +79,6 @@
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -276,7 +274,7 @@
       <updated>1749369137398</updated>
       <workItem from="1749369138551" duration="2673000" />
       <workItem from="1749371903312" duration="12170000" />
-      <workItem from="1749389204563" duration="1991000" />
+      <workItem from="1749389204563" duration="7346000" />
     </task>
     <servers />
   </component>

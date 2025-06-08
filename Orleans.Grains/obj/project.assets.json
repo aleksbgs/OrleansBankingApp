@@ -943,6 +943,22 @@
           }
         }
       },
+      "Microsoft.Orleans.Transactions/8.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Orleans.Runtime": "8.2.0"
+        },
+        "compile": {
+          "lib/net8.0/Orleans.Transactions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Orleans.Transactions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -2783,6 +2799,20 @@
         "microsoft.orleans.serialization.abstractions.nuspec"
       ]
     },
+    "Microsoft.Orleans.Transactions/8.2.0": {
+      "sha512": "0bWDJ2PU6NpqxpwnV1xl1SrEH1pssxlfC8Rd2szfRWlpDmCkNn2lYgx1DF5eGBz2NoVrmL4/wGyDpieXuPAlyw==",
+      "type": "package",
+      "path": "microsoft.orleans.transactions/8.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net8.0/Orleans.Transactions.dll",
+        "lib/net8.0/Orleans.Transactions.xml",
+        "logo_128.png",
+        "microsoft.orleans.transactions.8.2.0.nupkg.sha512",
+        "microsoft.orleans.transactions.nuspec"
+      ]
+    },
     "Newtonsoft.Json/13.0.3": {
       "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "type": "package",
@@ -3353,7 +3383,8 @@
       "Microsoft.Orleans.Core.Abstractions >= 8.2.0",
       "Microsoft.Orleans.Reminders >= 8.2.0",
       "Microsoft.Orleans.Runtime >= 8.2.0",
-      "Microsoft.Orleans.Sdk >= 8.2.0"
+      "Microsoft.Orleans.Sdk >= 8.2.0",
+      "Microsoft.Orleans.Transactions >= 8.2.0"
     ]
   },
   "packageFolders": {
@@ -3412,6 +3443,10 @@
             "version": "[8.2.0, )"
           },
           "Microsoft.Orleans.Sdk": {
+            "target": "Package",
+            "version": "[8.2.0, )"
+          },
+          "Microsoft.Orleans.Transactions": {
             "target": "Package",
             "version": "[8.2.0, )"
           }

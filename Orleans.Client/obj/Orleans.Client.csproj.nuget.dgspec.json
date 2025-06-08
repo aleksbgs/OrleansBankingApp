@@ -56,6 +56,10 @@
               "target": "Package",
               "version": "[8.2.0, )"
             },
+            "Microsoft.Orleans.Transactions": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -137,6 +141,10 @@
               "version": "[8.2.0, )"
             },
             "Microsoft.Orleans.Sdk": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "Microsoft.Orleans.Transactions": {
               "target": "Package",
               "version": "[8.2.0, )"
             }

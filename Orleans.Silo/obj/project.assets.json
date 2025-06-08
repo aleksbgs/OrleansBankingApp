@@ -1117,6 +1117,41 @@
           "Microsoft.Orleans.Sdk": "8.2.0"
         }
       },
+      "Microsoft.Orleans.Transactions/8.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Orleans.Runtime": "8.2.0"
+        },
+        "compile": {
+          "lib/net8.0/Orleans.Transactions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Orleans.Transactions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Orleans.Transactions.AzureStorage/8.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.35.0",
+          "Azure.Data.Tables": "12.8.1",
+          "Microsoft.Orleans.Transactions": "8.2.0",
+          "System.Net.NameResolution": "4.3.0"
+        },
+        "compile": {
+          "lib/net8.0/Orleans.Transactions.AzureStorage.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Orleans.Transactions.AzureStorage.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Win32.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1833,7 +1868,8 @@
           "Microsoft.Orleans.Core.Abstractions": "8.2.0",
           "Microsoft.Orleans.Reminders": "8.2.0",
           "Microsoft.Orleans.Runtime": "8.2.0",
-          "Microsoft.Orleans.Sdk": "8.2.0"
+          "Microsoft.Orleans.Sdk": "8.2.0",
+          "Microsoft.Orleans.Transactions": "8.2.0"
         },
         "compile": {
           "bin/placeholder/Orleans.Grains.dll": {}
@@ -3512,6 +3548,34 @@
         "logo_128.png",
         "microsoft.orleans.server.8.2.0.nupkg.sha512",
         "microsoft.orleans.server.nuspec"
+      ]
+    },
+    "Microsoft.Orleans.Transactions/8.2.0": {
+      "sha512": "0bWDJ2PU6NpqxpwnV1xl1SrEH1pssxlfC8Rd2szfRWlpDmCkNn2lYgx1DF5eGBz2NoVrmL4/wGyDpieXuPAlyw==",
+      "type": "package",
+      "path": "microsoft.orleans.transactions/8.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net8.0/Orleans.Transactions.dll",
+        "lib/net8.0/Orleans.Transactions.xml",
+        "logo_128.png",
+        "microsoft.orleans.transactions.8.2.0.nupkg.sha512",
+        "microsoft.orleans.transactions.nuspec"
+      ]
+    },
+    "Microsoft.Orleans.Transactions.AzureStorage/8.2.0": {
+      "sha512": "VbkgA9PZJYBmdsPPl1fNKKVpGYJveYB8v3HyYtXayYizHHl9Yn6I8TJNeuD9HDFCMbyNpYv3RX8YWszM0JMc3A==",
+      "type": "package",
+      "path": "microsoft.orleans.transactions.azurestorage/8.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net8.0/Orleans.Transactions.AzureStorage.dll",
+        "lib/net8.0/Orleans.Transactions.AzureStorage.xml",
+        "logo_128.png",
+        "microsoft.orleans.transactions.azurestorage.8.2.0.nupkg.sha512",
+        "microsoft.orleans.transactions.azurestorage.nuspec"
       ]
     },
     "Microsoft.Win32.Primitives/4.3.0": {
@@ -5556,6 +5620,7 @@
       "Microsoft.Orleans.Reminders.AzureStorage >= 8.2.0",
       "Microsoft.Orleans.Runtime >= 8.2.0",
       "Microsoft.Orleans.Server >= 8.2.0",
+      "Microsoft.Orleans.Transactions.AzureStorage >= 8.2.0",
       "Orleans.Grains >= 1.0.0"
     ]
   },
@@ -5623,6 +5688,10 @@
             "version": "[8.2.0, )"
           },
           "Microsoft.Orleans.Server": {
+            "target": "Package",
+            "version": "[8.2.0, )"
+          },
+          "Microsoft.Orleans.Transactions.AzureStorage": {
             "target": "Package",
             "version": "[8.2.0, )"
           }

@@ -104,3 +104,5 @@
 /Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.sourcelink.json
 /Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/bin/Debug/net8.0/Orleans.Reminders.dll
 /Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/bin/Debug/net8.0/Orleans.Reminders.AzureStorage.dll
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/bin/Debug/net8.0/Orleans.Transactions.dll
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/bin/Debug/net8.0/Orleans.Transactions.AzureStorage.dll

@@ -1,21 +1,28 @@
+using System.Transactions;
+using Orleans.Concurrency;
 using Orleans.Grains.Abstractions;
 using Orleans.Grains.State;
+using Orleans.Transactions.Abstractions;
 
 namespace Orleans.Grains.Grains;
 
+[Reentrant]
 public class CheckingAccountGrain : Grain, ICheckingAccountGrain, IRemindable
 {
-    private readonly IPersistentState<BalanceState> _balanceState;
+    private readonly ITransactionClient _transactionClient;
+    private readonly ITransactionalState<BalanceState> _balanceTransactionalState;
     private readonly IPersistentState<CheckingAccountState> _checkingAccountState;
 
+
     public CheckingAccountGrain(
-        [PersistentState("balance", "tableStorage")]
-        IPersistentState<BalanceState> balanceState,
+        ITransactionClient transactionClient,
+        [TransactionalState("balance")] ITransactionalState<BalanceState> balanceTransactionalState,
         [PersistentState("checkingAccount", "blobStorage")]
         IPersistentState<CheckingAccountState> checkingAccountState
     )
     {
-        _balanceState = balanceState;
+        _transactionClient = transactionClient;
+        _balanceTransactionalState = balanceTransactionalState;
         _checkingAccountState = checkingAccountState;
     }
 
@@ -24,30 +31,35 @@ public class CheckingAccountGrain : Grain, ICheckingAccountGrain, IRemindable
         _checkingAccountState.State.OpenedAtUtc = DateTime.UtcNow;
         _checkingAccountState.State.AccountType = "Default";
         _checkingAccountState.State.AccountId = this.GetGrainId().GetGuidKey();
-        _balanceState.State.Balance = openingBalance;
-        await _balanceState.WriteStateAsync();
+
+        await _balanceTransactionalState.PerformUpdate(state => { state.Balance = openingBalance; });
         await _checkingAccountState.WriteStateAsync();
     }
 
     public async Task<decimal> GetBalance()
     {
-        return _balanceState.State.Balance;
+        return await _balanceTransactionalState.PerformRead(state => state.Balance);
     }
 
     public async Task Debit(decimal amount)
     {
-        var currentBalance = _balanceState.State.Balance;
-        var newBalance = currentBalance - amount;
-        _balanceState.State.Balance = newBalance;
-        await _balanceState.WriteStateAsync();
+        await _balanceTransactionalState.PerformUpdate(state =>
+        {
+            var currentBalance = state.Balance;
+            var newBalance = currentBalance - amount;
+            state.Balance = newBalance;
+        });
     }
 
     public async Task Credit(decimal amount)
     {
-        var currentBalance = _balanceState.State.Balance;
-        var newBalance = currentBalance + amount;
-        _balanceState.State.Balance = newBalance;
-        await _balanceState.WriteStateAsync();
+        await _balanceTransactionalState.PerformUpdate(state =>
+        {
+            var currentBalance = state.Balance;
+            var newBalance = currentBalance + amount;
+            state.Balance = newBalance;
+        });
+
     }
 
     public async Task AddRecurringPayment(Guid id, decimal amount, int reccursEveryMinutes)
@@ -72,8 +84,8 @@ public class CheckingAccountGrain : Grain, ICheckingAccountGrain, IRemindable
             var recurringPayment =
                 _checkingAccountState.State.RecurringPayments.Single(p => p.PaymentId == recurringPaymentId);
 
-            await Debit(recurringPayment.PaymentAmount);
-
+            await _transactionClient.RunTransaction(TransactionOption.Create,
+                async () => { await Debit(recurringPayment.PaymentAmount); });
         }
     }
 }
