@@ -9,6 +9,7 @@
       "Orleans.Silo/1.0.0": {
         "dependencies": {
           "Microsoft.Orleans.Clustering.AzureStorage": "8.2.0",
+          "Microsoft.Orleans.Persistence.AzureStorage": "8.2.0",
           "Microsoft.Orleans.Runtime": "8.2.0",
           "Microsoft.Orleans.Server": "8.2.0",
           "Orleans.Grains": "1.0.0"
@@ -43,6 +44,30 @@
           "lib/netstandard2.0/Azure.Data.Tables.dll": {
             "assemblyVersion": "12.8.1.0",
             "fileVersion": "12.800.123.41503"
+          }
+        }
+      },
+      "Azure.Storage.Blobs/12.18.0": {
+        "dependencies": {
+          "Azure.Storage.Common": "12.17.0",
+          "System.Text.Json": "8.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Azure.Storage.Blobs.dll": {
+            "assemblyVersion": "12.18.0.0",
+            "fileVersion": "12.1800.23.46203"
+          }
+        }
+      },
+      "Azure.Storage.Common/12.17.0": {
+        "dependencies": {
+          "Azure.Core": "1.35.0",
+          "System.IO.Hashing": "8.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Azure.Storage.Common.dll": {
+            "assemblyVersion": "12.17.0.0",
+            "fileVersion": "12.1700.23.46203"
           }
         }
       },
@@ -631,6 +656,21 @@
           }
         }
       },
+      "Microsoft.Orleans.Persistence.AzureStorage/8.2.0": {
+        "dependencies": {
+          "Azure.Core": "1.35.0",
+          "Azure.Data.Tables": "12.8.1",
+          "Azure.Storage.Blobs": "12.18.0",
+          "Microsoft.Orleans.Runtime": "8.2.0",
+          "System.Net.NameResolution": "4.3.0"
+        },
+        "runtime": {
+          "lib/net8.0/Orleans.Persistence.AzureStorage.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
       "Microsoft.Orleans.Persistence.Memory/8.2.0": {
         "dependencies": {
           "Microsoft.Orleans.Runtime": "8.2.0"
@@ -1059,6 +1099,20 @@
       "path": "azure.data.tables/12.8.1",
       "hashPath": "azure.data.tables.12.8.1.nupkg.sha512"
     },
+    "Azure.Storage.Blobs/12.18.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IUqHRXnabXCzmmvkzqPK4FuGzLxmKSugDEt5Hm5B/JlJFR+aHDsPW4nCLbG0txThqBSKPqcBBU/oA6c5TaFJgA==",
+      "path": "azure.storage.blobs/12.18.0",
+      "hashPath": "azure.storage.blobs.12.18.0.nupkg.sha512"
+    },
+    "Azure.Storage.Common/12.17.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/h8SpUkxMuQy/MbNFeJQGmhYt3JnYfEiGeDojtNgLNzzhyDnRYgjF3ZKYgjORYQpn0Spr+4+v2MZy+0GNJBLrg==",
+      "path": "azure.storage.common/12.17.0",
+      "hashPath": "azure.storage.common.12.17.0.nupkg.sha512"
+    },
     "Humanizer.Core/2.14.1": {
       "type": "package",
       "serviceable": true,
@@ -1359,6 +1413,13 @@
       "sha512": "sha512-bKr5YqAzcYit2KD3BtG7YpxlM4en6magb7PHKGJKjyZ1H7v9G0a7duW811P8TwBqcv+MVS4KKQMzW5IjGI0pxw==",
       "path": "microsoft.orleans.core.abstractions/8.2.0",
       "hashPath": "microsoft.orleans.core.abstractions.8.2.0.nupkg.sha512"
+    },
+    "Microsoft.Orleans.Persistence.AzureStorage/8.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9AwuqzoH0ucOMzIlFvrbysW7bObuL85BOfD0qRfk3V7ak6Dl+dfSc6ANJ7tBPQvepUYplt05aVzFWKZrb4o4+w==",
+      "path": "microsoft.orleans.persistence.azurestorage/8.2.0",
+      "hashPath": "microsoft.orleans.persistence.azurestorage.8.2.0.nupkg.sha512"
     },
     "Microsoft.Orleans.Persistence.Memory/8.2.0": {
       "type": "package",

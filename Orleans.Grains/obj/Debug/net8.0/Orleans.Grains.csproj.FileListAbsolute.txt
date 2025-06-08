@@ -10,3 +10,4 @@
 /Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Grains/obj/Debug/net8.0/refint/Orleans.Grains.dll
 /Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.pdb
 /Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Grains/obj/Debug/net8.0/ref/Orleans.Grains.dll
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.sourcelink.json

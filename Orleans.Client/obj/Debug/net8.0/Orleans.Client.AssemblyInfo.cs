@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orleans.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5a583f8dd92eff239a32d232201f23160b75296")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orleans.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orleans.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -98,3 +98,7 @@
 /Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/obj/Debug/net8.0/ref/Orleans.Silo.dll
 /Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/bin/Debug/net8.0/Orleans.Grains.dll
 /Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/bin/Debug/net8.0/Orleans.Grains.pdb
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/bin/Debug/net8.0/Azure.Storage.Blobs.dll
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/bin/Debug/net8.0/Azure.Storage.Common.dll
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/bin/Debug/net8.0/Orleans.Persistence.AzureStorage.dll
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.sourcelink.json

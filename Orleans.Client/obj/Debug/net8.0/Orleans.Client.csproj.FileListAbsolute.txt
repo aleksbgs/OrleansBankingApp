@@ -82,3 +82,4 @@
 /Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Client/obj/Debug/net8.0/Orleans.Client.pdb
 /Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Client/obj/Debug/net8.0/Orleans.Client.genruntimeconfig.cache
 /Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Client/obj/Debug/net8.0/ref/Orleans.Client.dll
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Client/obj/Debug/net8.0/Orleans.Client.sourcelink.json

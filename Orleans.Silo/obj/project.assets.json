@@ -41,6 +41,40 @@
           }
         }
       },
+      "Azure.Storage.Blobs/12.18.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Storage.Common": "12.17.0",
+          "System.Text.Json": "4.7.2"
+        },
+        "compile": {
+          "lib/net6.0/Azure.Storage.Blobs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Azure.Storage.Blobs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Azure.Storage.Common/12.17.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.35.0",
+          "System.IO.Hashing": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Azure.Storage.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Azure.Storage.Common.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -932,6 +966,26 @@
           }
         }
       },
+      "Microsoft.Orleans.Persistence.AzureStorage/8.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.35.0",
+          "Azure.Data.Tables": "12.8.1",
+          "Azure.Storage.Blobs": "12.18.0",
+          "Microsoft.Orleans.Runtime": "8.2.0",
+          "System.Net.NameResolution": "4.3.0"
+        },
+        "compile": {
+          "lib/net8.0/Orleans.Persistence.AzureStorage.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Orleans.Persistence.AzureStorage.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Orleans.Persistence.Memory/8.2.0": {
         "type": "package",
         "dependencies": {
@@ -1792,6 +1846,44 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Data.Tables.dll",
         "lib/netstandard2.0/Azure.Data.Tables.xml"
+      ]
+    },
+    "Azure.Storage.Blobs/12.18.0": {
+      "sha512": "IUqHRXnabXCzmmvkzqPK4FuGzLxmKSugDEt5Hm5B/JlJFR+aHDsPW4nCLbG0txThqBSKPqcBBU/oA6c5TaFJgA==",
+      "type": "package",
+      "path": "azure.storage.blobs/12.18.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.storage.blobs.12.18.0.nupkg.sha512",
+        "azure.storage.blobs.nuspec",
+        "azureicon.png",
+        "lib/net6.0/Azure.Storage.Blobs.dll",
+        "lib/net6.0/Azure.Storage.Blobs.xml",
+        "lib/netstandard2.0/Azure.Storage.Blobs.dll",
+        "lib/netstandard2.0/Azure.Storage.Blobs.xml",
+        "lib/netstandard2.1/Azure.Storage.Blobs.dll",
+        "lib/netstandard2.1/Azure.Storage.Blobs.xml"
+      ]
+    },
+    "Azure.Storage.Common/12.17.0": {
+      "sha512": "/h8SpUkxMuQy/MbNFeJQGmhYt3JnYfEiGeDojtNgLNzzhyDnRYgjF3ZKYgjORYQpn0Spr+4+v2MZy+0GNJBLrg==",
+      "type": "package",
+      "path": "azure.storage.common/12.17.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.storage.common.12.17.0.nupkg.sha512",
+        "azure.storage.common.nuspec",
+        "azureicon.png",
+        "lib/net6.0/Azure.Storage.Common.dll",
+        "lib/net6.0/Azure.Storage.Common.xml",
+        "lib/netstandard2.0/Azure.Storage.Common.dll",
+        "lib/netstandard2.0/Azure.Storage.Common.xml"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -3252,6 +3344,20 @@
         "logo_128.png",
         "microsoft.orleans.core.abstractions.8.2.0.nupkg.sha512",
         "microsoft.orleans.core.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Orleans.Persistence.AzureStorage/8.2.0": {
+      "sha512": "9AwuqzoH0ucOMzIlFvrbysW7bObuL85BOfD0qRfk3V7ak6Dl+dfSc6ANJ7tBPQvepUYplt05aVzFWKZrb4o4+w==",
+      "type": "package",
+      "path": "microsoft.orleans.persistence.azurestorage/8.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net8.0/Orleans.Persistence.AzureStorage.dll",
+        "lib/net8.0/Orleans.Persistence.AzureStorage.xml",
+        "logo_128.png",
+        "microsoft.orleans.persistence.azurestorage.8.2.0.nupkg.sha512",
+        "microsoft.orleans.persistence.azurestorage.nuspec"
       ]
     },
     "Microsoft.Orleans.Persistence.Memory/8.2.0": {
@@ -5379,6 +5485,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.Orleans.Clustering.AzureStorage >= 8.2.0",
+      "Microsoft.Orleans.Persistence.AzureStorage >= 8.2.0",
       "Microsoft.Orleans.Runtime >= 8.2.0",
       "Microsoft.Orleans.Server >= 8.2.0",
       "Orleans.Grains >= 1.0.0"
@@ -5432,6 +5539,10 @@
         "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.Orleans.Clustering.AzureStorage": {
+            "target": "Package",
+            "version": "[8.2.0, )"
+          },
+          "Microsoft.Orleans.Persistence.AzureStorage": {
             "target": "Package",
             "version": "[8.2.0, )"
           },

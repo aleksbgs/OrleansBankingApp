@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "pX+GDKEKz0I=",
+  "dgSpecHash": "E5meZVG5SrI=",
   "success": true,
   "projectFilePath": "/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/Orleans.Silo.csproj",
   "expectedPackageFiles": [
     "/Users/admin/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/azure.data.tables/12.8.1/azure.data.tables.12.8.1.nupkg.sha512",
+    "/Users/admin/.nuget/packages/azure.storage.blobs/12.18.0/azure.storage.blobs.12.18.0.nupkg.sha512",
+    "/Users/admin/.nuget/packages/azure.storage.common/12.17.0/azure.storage.common.12.17.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.aspnetcore.connections.abstractions/8.0.0/microsoft.aspnetcore.connections.abstractions.8.0.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
@@ -49,6 +51,7 @@
     "/Users/admin/.nuget/packages/microsoft.orleans.codegenerator/8.2.0/microsoft.orleans.codegenerator.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.orleans.core/8.2.0/microsoft.orleans.core.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.orleans.core.abstractions/8.2.0/microsoft.orleans.core.abstractions.8.2.0.nupkg.sha512",
+    "/Users/admin/.nuget/packages/microsoft.orleans.persistence.azurestorage/8.2.0/microsoft.orleans.persistence.azurestorage.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.orleans.persistence.memory/8.2.0/microsoft.orleans.persistence.memory.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.orleans.runtime/8.2.0/microsoft.orleans.runtime.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.orleans.sdk/8.2.0/microsoft.orleans.sdk.8.2.0.nupkg.sha512",

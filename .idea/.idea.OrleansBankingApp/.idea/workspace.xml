@@ -11,7 +11,66 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa135e8c-bd37-4cde-97d3-101752858c61" name="Changes" comment="" />
+    <list default="true" id="aa135e8c-bd37-4cde-97d3-101752858c61" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.OrleansBankingApp/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Orleans.Client/Contracts/Credit.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Orleans.Client/Contracts/Debit.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Orleans.Grains/State/BalanceState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Orleans.Grains/State/CheckingAccountState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OrleansBankingApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OrleansBankingApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Grains.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Grains.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Grains.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Grains.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/ref/Orleans.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/ref/Orleans.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/refint/Orleans.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/refint/Orleans.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/Abstractions/ICheckingAccountGrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/Abstractions/ICheckingAccountGrain.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/ref/Orleans.Grains.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/ref/Orleans.Grains.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/refint/Orleans.Grains.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/refint/Orleans.Grains.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/Orleans.Silo.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/Orleans.Silo.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Grains.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Grains.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Grains.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Grains.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Silo.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Silo.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Silo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Silo.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Silo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Silo.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/ref/Orleans.Silo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/ref/Orleans.Silo.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/refint/Orleans.Silo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/refint/Orleans.Silo.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Orleans.Silo.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Orleans.Silo.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,10 +79,26 @@
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "aleksbgs"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/aleksbgs/OrleansBankingApp.git",
+    "accountId": "1ddedb8f-ca55-4dae-9097-c8b309064bd7"
+  }
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="Toolset" />
   </component>
@@ -31,24 +106,30 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2yDVTPXkhvpewNkxcl1cn2xqxQO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Orleans.Client: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.Orleans.Silo.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Orleans.Client: http.executor": "Debug",
+    ".NET Project.Orleans.Silo.executor": "Debug",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Multi-Launch.Multi-Launch: OrleansBankingApp">
     <configuration name="Orleans.Silo" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -181,13 +262,14 @@
       <option name="presentableId" value="Default" />
       <updated>1749369137398</updated>
       <workItem from="1749369138551" duration="2673000" />
-      <workItem from="1749371903312" duration="782000" />
+      <workItem from="1749371903312" duration="8479000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -207,6 +289,149 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs</url>
+          <line>33</line>
+          <properties documentPath="$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs" containingFunctionPresentation="Method 'GetBalance'">
+            <startOffsets>
+              <option value="1190" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1225" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs</url>
+          <line>28</line>
+          <properties documentPath="$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs" containingFunctionPresentation="Method 'Initialize'">
+            <startOffsets>
+              <option value="1078" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1124" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs</url>
+          <line>26</line>
+          <properties documentPath="$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs" containingFunctionPresentation="Method 'Initialize'">
+            <startOffsets>
+              <option value="977" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1022" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs</url>
+          <line>40</line>
+          <properties documentPath="$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs" containingFunctionPresentation="Method 'Debit'">
+            <startOffsets>
+              <option value="1399" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1440" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs</url>
+          <line>41</line>
+          <properties documentPath="$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs" containingFunctionPresentation="Method 'Debit'">
+            <startOffsets>
+              <option value="1449" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1487" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs</url>
+          <line>48</line>
+          <properties documentPath="$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs" containingFunctionPresentation="Method 'Credit'">
+            <startOffsets>
+              <option value="1662" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1703" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs</url>
+          <line>49</line>
+          <properties documentPath="$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs" containingFunctionPresentation="Method 'Credit'">
+            <startOffsets>
+              <option value="1712" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1750" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs</url>
+          <line>38</line>
+          <properties documentPath="$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs" containingFunctionPresentation="Method 'Debit'">
+            <startOffsets>
+              <option value="1291" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1340" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs</url>
+          <line>39</line>
+          <properties documentPath="$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs" containingFunctionPresentation="Method 'Debit'">
+            <startOffsets>
+              <option value="1349" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1390" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs</url>
+          <line>46</line>
+          <properties documentPath="$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs" containingFunctionPresentation="Method 'Credit'">
+            <startOffsets>
+              <option value="1554" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1603" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs</url>
+          <line>47</line>
+          <properties documentPath="$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs" containingFunctionPresentation="Method 'Credit'">
+            <startOffsets>
+              <option value="1612" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1653" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
