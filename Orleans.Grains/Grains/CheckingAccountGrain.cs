@@ -1,6 +1,7 @@
 using System.Transactions;
 using Orleans.Concurrency;
 using Orleans.Grains.Abstractions;
+using Orleans.Grains.Events;
 using Orleans.Grains.State;
 using Orleans.Transactions.Abstractions;
 
@@ -49,6 +50,12 @@ public class CheckingAccountGrain : Grain, ICheckingAccountGrain, IRemindable
             var newBalance = currentBalance - amount;
             state.Balance = newBalance;
         });
+        var streamProvider = this.GetStreamProvider("StreamProvider");
+        var streamId = StreamId.Create("BalanceStream", this.GetGrainId().GetGuidKey());
+        var stream = streamProvider.GetStream<BalanceChangeEvent>(streamId);
+
+        await stream.OnNextAsync(new BalanceChangeEvent
+            { CheckingAccountId = this.GetGrainId().GetGuidKey(), Balance = await GetBalance() });
     }
 
     public async Task Credit(decimal amount)
@@ -59,7 +66,12 @@ public class CheckingAccountGrain : Grain, ICheckingAccountGrain, IRemindable
             var newBalance = currentBalance + amount;
             state.Balance = newBalance;
         });
+        var streamProvider = this.GetStreamProvider("StreamProvider");
+        var streamId = StreamId.Create("BalanceStream", this.GetGrainId().GetGuidKey());
+        var stream = streamProvider.GetStream<BalanceChangeEvent>(streamId);
 
+        await stream.OnNextAsync(new BalanceChangeEvent
+            { CheckingAccountId = this.GetGrainId().GetGuidKey(), Balance = await GetBalance() });
     }
 
     public async Task AddRecurringPayment(Guid id, decimal amount, int reccursEveryMinutes)

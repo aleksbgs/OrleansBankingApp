@@ -60,6 +60,10 @@
               "target": "Package",
               "version": "[8.2.0, )"
             },
+            "Microsoft.Orleans.Streaming": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
             "Microsoft.Orleans.Transactions": {
               "target": "Package",
               "version": "[8.2.0, )"
@@ -146,6 +150,10 @@
               "version": "[8.2.0, )"
             },
             "Microsoft.Orleans.Server": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "Microsoft.Orleans.Streaming.AzureStorage": {
               "target": "Package",
               "version": "[8.2.0, )"
             },

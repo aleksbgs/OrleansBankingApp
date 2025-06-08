@@ -60,6 +60,10 @@
               "target": "Package",
               "version": "[8.2.0, )"
             },
+            "Microsoft.Orleans.Streaming": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
             "Microsoft.Orleans.Transactions": {
               "target": "Package",
               "version": "[8.2.0, )"

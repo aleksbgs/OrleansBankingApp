@@ -1,7 +1,7 @@
 # Ignore build output
 bin/
 obj
-Orleans.Client/bin/
+Orleans.Client/bin/**
 Orleans.Client/obj/
 Orleans.Grains/bin/
 Orleans.Grains/obj/

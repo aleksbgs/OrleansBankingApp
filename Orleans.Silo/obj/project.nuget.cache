@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "K73JZY8MT0U=",
+  "dgSpecHash": "zaxI+UDyLrU=",
   "success": true,
   "projectFilePath": "/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/Orleans.Silo.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "/Users/admin/.nuget/packages/azure.data.tables/12.8.1/azure.data.tables.12.8.1.nupkg.sha512",
     "/Users/admin/.nuget/packages/azure.storage.blobs/12.18.0/azure.storage.blobs.12.18.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/azure.storage.common/12.17.0/azure.storage.common.12.17.0.nupkg.sha512",
+    "/Users/admin/.nuget/packages/azure.storage.queues/12.16.0/azure.storage.queues.12.16.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.aspnetcore.connections.abstractions/8.0.0/microsoft.aspnetcore.connections.abstractions.8.0.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
@@ -60,6 +61,8 @@
     "/Users/admin/.nuget/packages/microsoft.orleans.serialization/8.2.0/microsoft.orleans.serialization.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.orleans.serialization.abstractions/8.2.0/microsoft.orleans.serialization.abstractions.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.orleans.server/8.2.0/microsoft.orleans.server.8.2.0.nupkg.sha512",
+    "/Users/admin/.nuget/packages/microsoft.orleans.streaming/8.2.0/microsoft.orleans.streaming.8.2.0.nupkg.sha512",
+    "/Users/admin/.nuget/packages/microsoft.orleans.streaming.azurestorage/8.2.0/microsoft.orleans.streaming.azurestorage.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.orleans.transactions/8.2.0/microsoft.orleans.transactions.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.orleans.transactions.azurestorage/8.2.0/microsoft.orleans.transactions.azurestorage.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.win32.primitives/4.3.0/microsoft.win32.primitives.4.3.0.nupkg.sha512",

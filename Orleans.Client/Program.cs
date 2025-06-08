@@ -113,6 +113,21 @@
      return TypedResults.Ok(balance);
 
  });
+
+ app.MapGet("customer/{customerId}/networth", async (Guid customerId, IClusterClient client) =>
+ {
+     var customerGrain = client.GetGrain<ICustomerGrain>(customerId);
+     var netWorth = await customerGrain.GetNetWorth();
+     return TypedResults.Ok(netWorth);
+
+ });
+ app.MapPost("customer/{checkingAccountId}/recurringPayment", async (IClusterClient clusterClient,
+     CustomerCheckingAccount customerCheckingAccount, Guid customerId) =>
+ {
+     var customerGrain = clusterClient.GetGrain<ICustomerGrain>(customerId);
+     await customerGrain.AddCheckingAccount(customerCheckingAccount.AccountId);
+     return TypedResults.NoContent();
+ });
      
      
  
