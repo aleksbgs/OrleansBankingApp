@@ -51,6 +51,21 @@
      var checkingAccountGrain = clusterClient.GetGrain<ICheckingAccountGrain>(checkingAccountId);
      await checkingAccountGrain.Credit(credit.amount);
      return TypedResults.NoContent();
+ }); 
+ 
+ app.MapPost("atm", async (IClusterClient clusterClient,CreateAtm createAtm) =>
+ {
+     var atmId = Guid.NewGuid();
+     var atmGrain = clusterClient.GetGrain<IAtmGrain>(atmId);
+     await atmGrain.Initialize(createAtm.InitialAtmCashBalance);
+     return TypedResults.Created($"atm/{atmId}");
+ });
+ 
+ app.MapPost("atm/{atmId}/withdrawl", async (IClusterClient clusterClient,AtmWithdrawl atmWithdrawl,Guid atmId) =>
+ {
+     var atmGrain = clusterClient.GetGrain<IAtmGrain>(atmId);
+     await atmGrain.Withdraw(atmWithdrawl.CheckingAccountId, atmWithdrawl.Amount);
+     return TypedResults.NoContent();
  });
  
  app.Run();

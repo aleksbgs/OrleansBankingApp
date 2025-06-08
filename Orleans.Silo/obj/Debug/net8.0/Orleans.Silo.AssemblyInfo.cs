@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orleans.Silo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5a583f8dd92eff239a32d232201f23160b75296")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b09f545b23c3180d03f51932af69c1684397660")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orleans.Silo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orleans.Silo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
