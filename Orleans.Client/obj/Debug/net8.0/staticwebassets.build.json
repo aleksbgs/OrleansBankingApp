@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "HOV1quTNrjzf4yS0oQiQBzNIRj2yDAe6rIgP5iCLN4Y=",
+  "Source": "Orleans.Client",
+  "BasePath": "_content/Orleans.Client",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

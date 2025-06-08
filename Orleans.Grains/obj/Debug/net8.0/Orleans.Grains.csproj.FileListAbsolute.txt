@@ -1,0 +1,12 @@
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.deps.json
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.dll
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.pdb
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.csproj.AssemblyReference.cache
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.GeneratedMSBuildEditorConfig.editorconfig
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.AssemblyInfoInputs.cache
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.AssemblyInfo.cs
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.csproj.CoreCompileInputs.cache
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.dll
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Grains/obj/Debug/net8.0/refint/Orleans.Grains.dll
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.pdb
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Grains/obj/Debug/net8.0/ref/Orleans.Grains.dll
