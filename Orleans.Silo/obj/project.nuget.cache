@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "E5meZVG5SrI=",
+  "dgSpecHash": "w34TwkvaHkU=",
   "success": true,
   "projectFilePath": "/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/Orleans.Silo.csproj",
   "expectedPackageFiles": [
@@ -53,6 +53,8 @@
     "/Users/admin/.nuget/packages/microsoft.orleans.core.abstractions/8.2.0/microsoft.orleans.core.abstractions.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.orleans.persistence.azurestorage/8.2.0/microsoft.orleans.persistence.azurestorage.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.orleans.persistence.memory/8.2.0/microsoft.orleans.persistence.memory.8.2.0.nupkg.sha512",
+    "/Users/admin/.nuget/packages/microsoft.orleans.reminders/8.2.0/microsoft.orleans.reminders.8.2.0.nupkg.sha512",
+    "/Users/admin/.nuget/packages/microsoft.orleans.reminders.azurestorage/8.2.0/microsoft.orleans.reminders.azurestorage.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.orleans.runtime/8.2.0/microsoft.orleans.runtime.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.orleans.sdk/8.2.0/microsoft.orleans.sdk.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.orleans.serialization/8.2.0/microsoft.orleans.serialization.8.2.0.nupkg.sha512",

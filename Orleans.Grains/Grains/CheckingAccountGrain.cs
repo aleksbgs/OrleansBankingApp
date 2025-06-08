@@ -3,11 +3,11 @@ using Orleans.Grains.State;
 
 namespace Orleans.Grains.Grains;
 
-public class CheckingAccountGrain : Grain, ICheckingAccountGrain
+public class CheckingAccountGrain : Grain, ICheckingAccountGrain, IRemindable
 {
     private readonly IPersistentState<BalanceState> _balanceState;
     private readonly IPersistentState<CheckingAccountState> _checkingAccountState;
-    
+
     public CheckingAccountGrain(
         [PersistentState("balance", "tableStorage")]
         IPersistentState<BalanceState> balanceState,
@@ -48,5 +48,32 @@ public class CheckingAccountGrain : Grain, ICheckingAccountGrain
         var newBalance = currentBalance + amount;
         _balanceState.State.Balance = newBalance;
         await _balanceState.WriteStateAsync();
+    }
+
+    public async Task AddRecurringPayment(Guid id, decimal amount, int reccursEveryMinutes)
+    {
+        _checkingAccountState.State.RecurringPayments.Add(new RecurringPayment
+        {
+            PaymentId = id,
+            PaymentAmount = amount,
+            OccursEveryMinutes = reccursEveryMinutes
+        });
+        await _checkingAccountState.WriteStateAsync();
+        await this.RegisterOrUpdateReminder($"RecurringPayment:::{id}", TimeSpan.FromMinutes(reccursEveryMinutes),
+            TimeSpan.FromMinutes(reccursEveryMinutes));
+
+    }
+
+    public async Task ReceiveReminder(string reminderName, TickStatus status)
+    {
+        if (reminderName.StartsWith("RecurringPayment::"))
+        {
+            var recurringPaymentId = Guid.Parse(reminderName.Split(":::").Last());
+            var recurringPayment =
+                _checkingAccountState.State.RecurringPayments.Single(p => p.PaymentId == recurringPaymentId);
+
+            await Debit(recurringPayment.PaymentAmount);
+
+        }
     }
 }

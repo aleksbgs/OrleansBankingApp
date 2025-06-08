@@ -12,45 +12,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa135e8c-bd37-4cde-97d3-101752858c61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Orleans.Client/Contracts/AtmWithdrawl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Orleans.Client/Contracts/CreateAtm.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Orleans.Grains/Abstractions/IAtmGrain.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Orleans.Grains/Grains/AtmGrain.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Orleans.Grains/State/AtmState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Orleans.Client/Contracts/CreateRecurringPayment.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Orleans.Grains/State/ReccuringPayment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OrleansBankingApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OrleansBankingApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Grains.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Grains.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Grains.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Grains.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/ref/Orleans.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/ref/Orleans.Client.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/refint/Orleans.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/refint/Orleans.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Orleans.Client.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Orleans.Client.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/Abstractions/ICheckingAccountGrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/Abstractions/ICheckingAccountGrain.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/Grains/CheckingAccountGrain.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/Orleans.Grains.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/Orleans.Grains.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/State/CheckingAccountState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/State/CheckingAccountState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/ref/Orleans.Grains.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/ref/Orleans.Grains.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/refint/Orleans.Grains.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/refint/Orleans.Grains.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Orleans.Grains.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Orleans.Grains.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/Orleans.Silo.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/Orleans.Silo.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Grains.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Grains.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Grains.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Grains.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Silo.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Silo.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Silo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Silo.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Silo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Silo.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/ref/Orleans.Silo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/ref/Orleans.Silo.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/refint/Orleans.Silo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/refint/Orleans.Silo.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Orleans.Silo.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Orleans.Silo.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,18 +94,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "aleksbgs"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;aleksbgs&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/aleksbgs/OrleansBankingApp.git",
-    "accountId": "1ddedb8f-ca55-4dae-9097-c8b309064bd7"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/aleksbgs/OrleansBankingApp.git&quot;,
+    &quot;accountId&quot;: &quot;1ddedb8f-ca55-4dae-9097-c8b309064bd7&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -101,6 +132,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
@@ -243,7 +275,8 @@
       <option name="presentableId" value="Default" />
       <updated>1749369137398</updated>
       <workItem from="1749369138551" duration="2673000" />
-      <workItem from="1749371903312" duration="11012000" />
+      <workItem from="1749371903312" duration="12170000" />
+      <workItem from="1749389204563" duration="1991000" />
     </task>
     <servers />
   </component>

@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[8.2.0, )"
             },
+            "Microsoft.Orleans.Reminders": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
             "Microsoft.Orleans.Runtime": {
               "target": "Package",
               "version": "[8.2.0, )"
@@ -126,6 +130,10 @@
               "version": "[8.2.0, )"
             },
             "Microsoft.Orleans.Persistence.AzureStorage": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "Microsoft.Orleans.Reminders.AzureStorage": {
               "target": "Package",
               "version": "[8.2.0, )"
             },

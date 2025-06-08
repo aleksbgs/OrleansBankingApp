@@ -1,6 +1,14 @@
 # Ignore build output
 bin/
-obj/
+obj
+Orleans.Client/bin/
+Orleans.Client/obj/
+Orleans.Grains/bin/
+Orleans.Grains/obj/
+Orleans.Silo/bin/
+Orleans.Silo/obj/    
+
+
 
 # Rider
 .idea/

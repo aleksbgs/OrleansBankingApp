@@ -60,13 +60,22 @@
      await atmGrain.Initialize(createAtm.InitialAtmCashBalance);
      return TypedResults.Created($"atm/{atmId}");
  });
- 
- app.MapPost("atm/{atmId}/withdrawl", async (IClusterClient clusterClient,AtmWithdrawl atmWithdrawl,Guid atmId) =>
+
+ app.MapPost("atm/{atmId}/withdrawl", async (IClusterClient clusterClient, AtmWithdrawl atmWithdrawl, Guid atmId) =>
  {
      var atmGrain = clusterClient.GetGrain<IAtmGrain>(atmId);
      await atmGrain.Withdraw(atmWithdrawl.CheckingAccountId, atmWithdrawl.Amount);
      return TypedResults.NoContent();
  });
+ app.MapPost("checkingaccount/{checkingAccountId}/recurringPayment", async (IClusterClient clusterClient,CreateRecurringPayment createRecurringPayment,Guid checkingAccountId) =>
+ {
+     var checkingAccountGrain = clusterClient.GetGrain<ICheckingAccountGrain>(checkingAccountId);
+     await checkingAccountGrain.AddRecurringPayment(createRecurringPayment.PaymentId,
+         createRecurringPayment.PaymentAmount, createRecurringPayment.PaymentRecurrsEveryMinutes);
+     return TypedResults.NoContent();
+ }); 
+     
+     
  
  app.Run();
      

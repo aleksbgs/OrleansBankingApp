@@ -9,6 +9,7 @@
       "Orleans.Grains/1.0.0": {
         "dependencies": {
           "Microsoft.Orleans.Core.Abstractions": "8.2.0",
+          "Microsoft.Orleans.Reminders": "8.2.0",
           "Microsoft.Orleans.Runtime": "8.2.0",
           "Microsoft.Orleans.Sdk": "8.2.0"
         },
@@ -585,6 +586,19 @@
           }
         }
       },
+      "Microsoft.Orleans.Reminders/8.2.0": {
+        "dependencies": {
+          "Microsoft.Orleans.Core.Abstractions": "8.2.0",
+          "Microsoft.Orleans.Runtime": "8.2.0",
+          "Microsoft.Orleans.Sdk": "8.2.0"
+        },
+        "runtime": {
+          "lib/net8.0/Orleans.Reminders.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
       "Microsoft.Orleans.Runtime/8.2.0": {
         "dependencies": {
           "Microsoft.Orleans.Core": "8.2.0"
@@ -1060,6 +1074,13 @@
       "sha512": "sha512-bKr5YqAzcYit2KD3BtG7YpxlM4en6magb7PHKGJKjyZ1H7v9G0a7duW811P8TwBqcv+MVS4KKQMzW5IjGI0pxw==",
       "path": "microsoft.orleans.core.abstractions/8.2.0",
       "hashPath": "microsoft.orleans.core.abstractions.8.2.0.nupkg.sha512"
+    },
+    "Microsoft.Orleans.Reminders/8.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ktDIehhLeIRmzQ3yCPH9YF7RturDMunsIqaXF9A2IyeMYE8s4uXz8yszM+buIz+0mp4k+QqJKd/f86Tz9GyWCg==",
+      "path": "microsoft.orleans.reminders/8.2.0",
+      "hashPath": "microsoft.orleans.reminders.8.2.0.nupkg.sha512"
     },
     "Microsoft.Orleans.Runtime/8.2.0": {
       "type": "package",

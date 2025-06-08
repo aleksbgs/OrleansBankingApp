@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orleans.Grains")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b09f545b23c3180d03f51932af69c1684397660")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1af3a4fb889d4b9e9f745dc48f7e46fce2de81b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orleans.Grains")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orleans.Grains")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

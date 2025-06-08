@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NplJIZ0ItKE=",
+  "dgSpecHash": "jsxdaZ6Z+9E=",
   "success": true,
   "projectFilePath": "/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Client/Orleans.Client.csproj",
   "expectedPackageFiles": [
@@ -52,6 +52,7 @@
     "/Users/admin/.nuget/packages/microsoft.orleans.codegenerator/8.2.0/microsoft.orleans.codegenerator.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.orleans.core/8.2.0/microsoft.orleans.core.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.orleans.core.abstractions/8.2.0/microsoft.orleans.core.abstractions.8.2.0.nupkg.sha512",
+    "/Users/admin/.nuget/packages/microsoft.orleans.reminders/8.2.0/microsoft.orleans.reminders.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.orleans.runtime/8.2.0/microsoft.orleans.runtime.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.orleans.sdk/8.2.0/microsoft.orleans.sdk.8.2.0.nupkg.sha512",
     "/Users/admin/.nuget/packages/microsoft.orleans.serialization/8.2.0/microsoft.orleans.serialization.8.2.0.nupkg.sha512",

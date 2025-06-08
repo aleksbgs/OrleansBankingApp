@@ -21,8 +21,12 @@ await Host.CreateDefaultBuilder(args)
         {
             options.BlobServiceClient = new Azure.Storage.Blobs.BlobServiceClient("UseDevelopmentStorage=true");
         });
-        
- 
+
+        siloBuilder.UseAzureTableReminderService(configureOptions: options =>
+        {
+            options.Configure(o =>
+                o.TableServiceClient = new Azure.Data.Tables.TableServiceClient("UseDevelopmentStorage=true"));
+        });
 
 
         // siloBuilder.Configure<GrainCollectionOptions>(options =>
