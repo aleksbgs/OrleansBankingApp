@@ -106,3 +106,6 @@
 /Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/bin/Debug/net8.0/Orleans.Reminders.AzureStorage.dll
 /Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/bin/Debug/net8.0/Orleans.Transactions.dll
 /Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/bin/Debug/net8.0/Orleans.Transactions.AzureStorage.dll
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/bin/Debug/net8.0/Azure.Storage.Queues.dll
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/bin/Debug/net8.0/Orleans.Streaming.dll
+/Users/admin/Desktop/OrleansBankingApp/OrleansBankingApp/Orleans.Silo/bin/Debug/net8.0/Orleans.Streaming.AzureStorage.dll

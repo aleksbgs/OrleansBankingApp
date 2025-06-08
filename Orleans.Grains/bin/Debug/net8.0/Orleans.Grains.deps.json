@@ -12,6 +12,7 @@
           "Microsoft.Orleans.Reminders": "8.2.0",
           "Microsoft.Orleans.Runtime": "8.2.0",
           "Microsoft.Orleans.Sdk": "8.2.0",
+          "Microsoft.Orleans.Streaming": "8.2.0",
           "Microsoft.Orleans.Transactions": "8.2.0"
         },
         "runtime": {
@@ -647,6 +648,17 @@
           }
         }
       },
+      "Microsoft.Orleans.Streaming/8.2.0": {
+        "dependencies": {
+          "Microsoft.Orleans.Runtime": "8.2.0"
+        },
+        "runtime": {
+          "lib/net8.0/Orleans.Streaming.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
       "Microsoft.Orleans.Transactions/8.2.0": {
         "dependencies": {
           "Microsoft.Orleans.Runtime": "8.2.0"
@@ -1121,6 +1133,13 @@
       "sha512": "sha512-gdsywYbwORWmc+JN2B7qVqjQrzWSnHCdrYsfyBGbS1gfX1hs+rOmGbQwFJ+GmxAbj60xnrxXlXfCoDCDajcGYg==",
       "path": "microsoft.orleans.serialization.abstractions/8.2.0",
       "hashPath": "microsoft.orleans.serialization.abstractions.8.2.0.nupkg.sha512"
+    },
+    "Microsoft.Orleans.Streaming/8.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Pk+siwHyxkSe+FxWDscRgnxh4GOYxEZrCJKz/tmv2m0P3+fGyM/8zFvc6eMRW8zJYvwtg6LIQ/OGTy/cEovj7A==",
+      "path": "microsoft.orleans.streaming/8.2.0",
+      "hashPath": "microsoft.orleans.streaming.8.2.0.nupkg.sha512"
     },
     "Microsoft.Orleans.Transactions/8.2.0": {
       "type": "package",

@@ -127,6 +127,15 @@
      var customerGrain = clusterClient.GetGrain<ICustomerGrain>(customerId);
      await customerGrain.AddCheckingAccount(customerCheckingAccount.AccountId);
      return TypedResults.NoContent();
+ }); 
+ 
+ app.MapPost("transfer", async (IClusterClient clusterClient,
+     Transfer transfer) =>
+ {
+     var statlessTransferProcessingGrain = clusterClient.GetGrain<ITransferProcessingGrain>(0);
+     await statlessTransferProcessingGrain.ProcessTransfer(transfer.FromAccountId, transfer.ToAccountId, transfer.Amount);
+     return TypedResults.NoContent();
+     
  });
      
      

@@ -13,6 +13,7 @@
           "Microsoft.Orleans.Reminders.AzureStorage": "8.2.0",
           "Microsoft.Orleans.Runtime": "8.2.0",
           "Microsoft.Orleans.Server": "8.2.0",
+          "Microsoft.Orleans.Streaming.AzureStorage": "8.2.0",
           "Microsoft.Orleans.Transactions.AzureStorage": "8.2.0",
           "Orleans.Grains": "1.0.0"
         },
@@ -70,6 +71,19 @@
           "lib/net6.0/Azure.Storage.Common.dll": {
             "assemblyVersion": "12.17.0.0",
             "fileVersion": "12.1700.23.46203"
+          }
+        }
+      },
+      "Azure.Storage.Queues/12.16.0": {
+        "dependencies": {
+          "Azure.Storage.Common": "12.17.0",
+          "System.Memory.Data": "8.0.0",
+          "System.Text.Json": "8.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Azure.Storage.Queues.dll": {
+            "assemblyVersion": "12.16.0.0",
+            "fileVersion": "12.1600.23.46203"
           }
         }
       },
@@ -766,6 +780,33 @@
           "Microsoft.Orleans.Sdk": "8.2.0"
         }
       },
+      "Microsoft.Orleans.Streaming/8.2.0": {
+        "dependencies": {
+          "Microsoft.Orleans.Runtime": "8.2.0"
+        },
+        "runtime": {
+          "lib/net8.0/Orleans.Streaming.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
+      "Microsoft.Orleans.Streaming.AzureStorage/8.2.0": {
+        "dependencies": {
+          "Azure.Core": "1.35.0",
+          "Azure.Data.Tables": "12.8.1",
+          "Azure.Storage.Blobs": "12.18.0",
+          "Azure.Storage.Queues": "12.16.0",
+          "Microsoft.Orleans.Streaming": "8.2.0",
+          "System.Net.NameResolution": "4.3.0"
+        },
+        "runtime": {
+          "lib/net8.0/Orleans.Streaming.AzureStorage.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
       "Microsoft.Orleans.Transactions/8.2.0": {
         "dependencies": {
           "Microsoft.Orleans.Runtime": "8.2.0"
@@ -1125,6 +1166,7 @@
           "Microsoft.Orleans.Reminders": "8.2.0",
           "Microsoft.Orleans.Runtime": "8.2.0",
           "Microsoft.Orleans.Sdk": "8.2.0",
+          "Microsoft.Orleans.Streaming": "8.2.0",
           "Microsoft.Orleans.Transactions": "8.2.0"
         },
         "runtime": {
@@ -1169,6 +1211,13 @@
       "sha512": "sha512-/h8SpUkxMuQy/MbNFeJQGmhYt3JnYfEiGeDojtNgLNzzhyDnRYgjF3ZKYgjORYQpn0Spr+4+v2MZy+0GNJBLrg==",
       "path": "azure.storage.common/12.17.0",
       "hashPath": "azure.storage.common.12.17.0.nupkg.sha512"
+    },
+    "Azure.Storage.Queues/12.16.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ociB+g4P8d4o6K6dsCxz4qVNyGzmTKC5t7wlDLAezbfAp4m41SAUvxcDU0N4Mqxf04GPQeyImSeMFQfDzZHEcQ==",
+      "path": "azure.storage.queues/12.16.0",
+      "hashPath": "azure.storage.queues.12.16.0.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1533,6 +1582,20 @@
       "sha512": "sha512-Fw9TOVZ2LFS5CPMhCKFiSu9wkEe+PEAxwcxKpxDnaNwE+dayF3GWvT9qM/PZ40iHd1NgRVhpMWvkQepRLSosmw==",
       "path": "microsoft.orleans.server/8.2.0",
       "hashPath": "microsoft.orleans.server.8.2.0.nupkg.sha512"
+    },
+    "Microsoft.Orleans.Streaming/8.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Pk+siwHyxkSe+FxWDscRgnxh4GOYxEZrCJKz/tmv2m0P3+fGyM/8zFvc6eMRW8zJYvwtg6LIQ/OGTy/cEovj7A==",
+      "path": "microsoft.orleans.streaming/8.2.0",
+      "hashPath": "microsoft.orleans.streaming.8.2.0.nupkg.sha512"
+    },
+    "Microsoft.Orleans.Streaming.AzureStorage/8.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CS/FeMkK7M38ym+70dB1DZjXzT0+zcMVf24IOt2yWcRliF1dJIerj6v5rlnRL3iy3NPyb0QMLQB7qTZQcPFNqg==",
+      "path": "microsoft.orleans.streaming.azurestorage/8.2.0",
+      "hashPath": "microsoft.orleans.streaming.azurestorage.8.2.0.nupkg.sha512"
     },
     "Microsoft.Orleans.Transactions/8.2.0": {
       "type": "package",
