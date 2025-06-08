@@ -12,18 +12,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa135e8c-bd37-4cde-97d3-101752858c61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Orleans.Client/Contracts/Transfer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Orleans.Grains/Abstractions/ITransferProcessingGrain.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Orleans.Grains/Grains/StatlessTransferProcessingGrain.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Orleans.Grains/State/TransferState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Orleans.Grains/Filters/LogginOutgoingFilter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Orleans.Grains/Filters/LoggingIncomingGrain.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OrleansBankingApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OrleansBankingApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Client.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Grains.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Grains.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Grains.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/bin/Debug/net8.0/Orleans.Grains.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/Orleans.Client.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/ref/Orleans.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/ref/Orleans.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/refint/Orleans.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Client/obj/Debug/net8.0/refint/Orleans.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Grains/Grains/AtmGrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/Grains/AtmGrain.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/bin/Debug/net8.0/Orleans.Grains.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.AssemblyInfo.cs" afterDir="false" />
@@ -34,19 +40,17 @@
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/Orleans.Grains.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/ref/Orleans.Grains.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/ref/Orleans.Grains.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/refint/Orleans.Grains.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Grains/obj/Debug/net8.0/refint/Orleans.Grains.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Grains.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Grains.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Grains.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Grains.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Silo.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Silo.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Silo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Silo.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Silo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/bin/Debug/net8.0/Orleans.Silo.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/Orleans.Silo.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/ref/Orleans.Silo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/ref/Orleans.Silo.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/refint/Orleans.Silo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Orleans.Silo/obj/Debug/net8.0/refint/Orleans.Silo.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +113,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Multi-Launch.Multi-Launch: OrleansBankingApp">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Orleans.Client: http">
     <configuration name="Orleans.Silo" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -242,7 +246,7 @@
       <updated>1749369137398</updated>
       <workItem from="1749369138551" duration="2673000" />
       <workItem from="1749371903312" duration="12170000" />
-      <workItem from="1749389204563" duration="15707000" />
+      <workItem from="1749389204563" duration="17958000" />
     </task>
     <servers />
   </component>

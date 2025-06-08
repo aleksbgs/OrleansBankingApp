@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Logging;
 using Orleans.Concurrency;
 using Orleans.Grains.Abstractions;
 using Orleans.Grains.State;
@@ -6,13 +7,15 @@ using Orleans.Transactions.Abstractions;
 namespace Orleans.Grains.Grains;
 
 [Reentrant]
-public class AtmGrain : Grain, IAtmGrain
+public class AtmGrain : Grain, IAtmGrain,IIncomingGrainCallFilter
 {
+    private readonly ILogger<AtmGrain> _logger;
     private readonly ITransactionalState<AtmState> _atmTransactionalState;
 
 
-    public AtmGrain([TransactionalState("atm")] ITransactionalState<AtmState> atmTransactionalState)
+    public AtmGrain(ILogger<AtmGrain> logger,[TransactionalState("atm")] ITransactionalState<AtmState> atmTransactionalState)
     {
+        _logger = logger;
         _atmTransactionalState = atmTransactionalState;
     }
 
@@ -40,5 +43,12 @@ public class AtmGrain : Grain, IAtmGrain
     public async Task<decimal> GetBalance()
     {
         return await _atmTransactionalState.PerformRead((state) => state.Balance);
+    }
+
+    public async Task Invoke(IIncomingGrainCallContext context)
+    {
+        _logger.LogInformation(
+            $"Incoming Atm grain filter: Received grain on '{context.Grain}' to '{context.MethodName}' method");
+        await context.Invoke();
     }
 }

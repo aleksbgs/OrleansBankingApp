@@ -1,6 +1,7 @@
  using Orleans.Client.Contracts;
  using Orleans.Configuration;
  using Orleans.Grains.Abstractions;
+ using Orleans.Grains.Filters;
 
  var builder = WebApplication.CreateBuilder(args);
  builder.Host.UseOrleansClient((context, client) =>
@@ -14,6 +15,7 @@
          options.ClusterId = "devCluster";
          options.ServiceId = "devService";
      });
+     client.AddOutgoingGrainCallFilter<LogginOutgoingFilter>();
      client.UseTransactions();
  });
  

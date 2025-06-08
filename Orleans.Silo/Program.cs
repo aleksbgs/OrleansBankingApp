@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using Orleans.Configuration;
+using Orleans.Grains.Filters;
 
 await Host.CreateDefaultBuilder(args)
     .UseOrleans(siloBuilder =>
@@ -38,6 +39,8 @@ await Host.CreateDefaultBuilder(args)
             });
             siloBuilder.UseTransactions();
 
+            siloBuilder.AddIncomingGrainCallFilter<LoggingIncomingGrain>();
+            
             siloBuilder.AddAzureQueueStreams("StreamProvider",
                 optionBuilder =>
                 {
